@@ -178,6 +178,9 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+
 
 export default function Result() {
   const { state } = useLocation();
@@ -225,11 +228,15 @@ export default function Result() {
 
   if (loading)
     return (
-      <div className="text-center text-lg text-gray-600">Loading results...</div>
+      <div className=" mt-10 "><DotLottieReact
+      src="https://lottie.host/3695126e-4a51-4de3-84e9-b5b77db17695/TP1TtYQU4O.lottie"
+      loop
+      autoplay
+    /></div>
     );
 
   return (
-    <div className="max-w-md mx-auto mt-10 bg-white p-6 rounded-2xl shadow-lg space-y-6">
+    <div className="max-w-md mx-auto mt-10 bg-white p-6 rounded-2xl shadow-lg space-y-6 mb-5">
       <h1 className="text-3xl font-bold text-center">🎉 Quiz Completed!</h1>
       <p className="text-xl  text-center">கலந்து கொண்டதற்கு நன்றி கர்த்தர் உங்களை ஆசீர்வதிப்பாராக.</p>
       {/* ✅ Participant Info */}
