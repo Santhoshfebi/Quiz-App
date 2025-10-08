@@ -295,7 +295,7 @@ export default function Result() {
   {/* WhatsApp Button */}
   <button
     onClick={() =>
-      window.open("https://chat.whatsapp.com/JPIqm0Z2l7gFwk9LjWkJFM", "_blank")
+      window.open("https://chat.whatsapp.com/GEnGf9jl2SP7EfBRpCnqva?mode=wwt", "_blank")
     }
     className="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all flex items-center justify-center gap-2"
   >

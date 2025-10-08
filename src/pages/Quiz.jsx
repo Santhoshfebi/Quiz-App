@@ -237,7 +237,7 @@ export default function Quiz() {
     if (timeLeft <= 0) {
       // show correct answer before moving on
       setShowAnswer(true);
-      setTimeout(() => handleNext(true), 2000);
+      setTimeout(() => handleNext(true), 700);
       return;
     }
 
@@ -289,10 +289,9 @@ export default function Quiz() {
     setSelected(option);
     setShowAnswer(true);
     // delay before next
-    setTimeout(() => handleNext(false, option), 2000);
+    setTimeout(() => handleNext(false, option), 700);
   };
 
-  const progressPercent = ((current + 1) / questions.length) * 100;
   const timePercent = (timeLeft / 20) * 100;
 
   return (
@@ -307,13 +306,13 @@ export default function Quiz() {
       {/* Question Info */}
       <div className="flex justify-between mb-2 font-medium text-gray-700">
         <span>Question {current + 1} / {questions.length}</span>
-        <span className="text-red-600 font-semibold">⏱ {timeLeft}s</span>
+        <span className="text-red-600 font-semibold">⏱️ : {timeLeft}s</span>
       </div>
 
       {/* Timer Progress Bar */}
-      <div className="w-full bg-gray-200 h-2 rounded mb-3">
+      <div className="w-full bg-gray-200 h-3 rounded mb-3">
         <div
-          className="h-2 bg-green-500 rounded transition-all duration-1000 ease-linear"
+          className="h-3 bg-green-500 rounded transition-all duration-1000 ease-linear"
           style={{ width: `${timePercent}%` }}
         />
       </div>

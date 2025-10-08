@@ -8,8 +8,17 @@ export default function Welcome() {
   const [place, setPlace] = useState("");
 
   const handleStart = () => {
-    if (!name || !phone || !place) return alert("Fill all fields!");
+     const phoneRegex = /^[0-9]{10}$/;
+    if (!name || !phone || !place) {
+      alert("Please fill all fields");
+      return;
+    }
+    if (!phoneRegex.test(phone)) {
+      alert("Please enter a valid 10-digit phone number");
+      return;
+    }
     navigate("/quiz", { state: { name, phone, place } });
+    
   };
 
   return (
@@ -18,18 +27,21 @@ export default function Welcome() {
       <p className="text-center">Enjoy the Quiz...!</p>
       <h5 className="text-xl font-bold text-center">Chapter: GENESIS</h5>
       <input
-        placeholder="Name"
+        type="text"
+        placeholder="Your Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
         className="w-full border px-3 py-2 rounded-lg "
       />
       <input
+      type="tel"
         placeholder="Phone Number"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
-        className="w-full border px-3 py-2 rounded-lg "
-      />
+        className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        maxLength={10}/>
       <input
+      type="text" 
         placeholder="Division"
         value={place}
         onChange={(e) => setPlace(e.target.value)}
@@ -37,7 +49,7 @@ export default function Welcome() {
       />
       <button
         onClick={handleStart}
-        className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
+        className="w-full bg-blue-400 text-white py-2 rounded-lg hover:bg-green-600"
       >
         Start Quiz
       </button>
