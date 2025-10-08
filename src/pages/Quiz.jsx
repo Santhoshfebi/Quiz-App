@@ -300,12 +300,11 @@ export default function Quiz() {
       <div className="md:justify-evenly md:flex text-center mb-4 font-semibold text-lg  ">
          <p>Participant: <span className="text-blue-950">{participant.name}</span></p>
                <h5 className="text-xl font-bold text-center">Chapter: Mock Round</h5>
-         <div>Questions : {current + 1} / {questions.length}</div>
+         <div className="font-medium text-gray-700">Questions : {current + 1} / {questions.length}</div>
        </div>
 
       {/* Question Info */}
-      <div className="flex justify-between mb-2 font-medium text-gray-700">
-        <span>Question {current + 1} / {questions.length}</span>
+      <div className="flex justify-end mb-2 font-medium text-gray-700">
         <span className="text-red-600 font-semibold">⏱️ : {timeLeft}s</span>
       </div>
 
