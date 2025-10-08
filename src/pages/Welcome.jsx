@@ -118,7 +118,7 @@ export default function Welcome() {
      </div>
 
       {/* Right: Tips Section */}
-      <div className="md:ml-8 mt-8 md:mt-0 bg-white p-6 rounded-2xl shadow-md w-full md:w-1/3">
+      <div className="md:ml-8 mt-20 md:mt-20 bg-white p-6 rounded-2xl shadow-md w-full md:w-1/3">
         <h2 className="text-xl font-semibold text-gray-800 mb-4">💡 Quiz Tips</h2>
         <ul className="list-disc pl-5 space-y-2 text-gray-700 text-sm leading-relaxed">
           <li>ஒவ்வொரு கேள்விக்கும் பதில் சொல்ல 20 விநாடிகள் மட்டுமே உண்டு.</li>
