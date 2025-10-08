@@ -228,7 +228,7 @@ export default function Result() {
 
   if (loading)
     return (
-      <div className=" mt-10 "><DotLottieReact
+      <div className="sm:mt-10  mt-52 h-96"><DotLottieReact
       src="https://lottie.host/3695126e-4a51-4de3-84e9-b5b77db17695/TP1TtYQU4O.lottie"
       loop
       autoplay
@@ -274,7 +274,7 @@ export default function Result() {
               >
                 <div className="flex items-center space-x-2">
                   <span className="text-xl">{badge}</span>
-                  <span className="font-medium">{player.name}</span>
+                  <span className="font-medium">{player.name} ( {player.place} )</span>
                 </div>
               </div>
             );
