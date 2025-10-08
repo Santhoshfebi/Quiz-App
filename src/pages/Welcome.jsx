@@ -82,7 +82,7 @@ export default function Welcome() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-50 p-4">
+    <div className="flex flex-col md:flex-row items-start justify-center min-h-screen bg-gray-50 p-4">
       {/* Left: Input Form */}
       <div className=" mt-20 w-96 bg-white p-6 rounded-2xl shadow-lg space-y-4">
        <h1 className="text-2xl font-bold text-center">Welcome to the Quiz!</h1>
