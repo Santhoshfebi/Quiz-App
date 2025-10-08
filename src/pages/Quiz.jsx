@@ -299,7 +299,7 @@ export default function Quiz() {
       {/* 🧍 Participant Name */}
       <div className="md:justify-evenly md:flex text-center mb-4 font-semibold text-lg  ">
          <p>Participant: <span className="text-blue-950">{participant.name}</span></p>
-               <h5 className="text-xl font-bold text-center">Chapter: GENESIS</h5>
+               <h5 className="text-xl font-bold text-center">Chapter: Mock Round</h5>
          <div>Questions : {current + 1} / {questions.length}</div>
        </div>
 
