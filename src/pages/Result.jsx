@@ -229,7 +229,7 @@ export default function Result() {
     );
 
   return (
-    <div className="max-w-md mx-auto mt-20 bg-white p-6 rounded-2xl shadow-lg space-y-6">
+    <div className="max-w-md mx-auto mt-10 bg-white p-6 rounded-2xl shadow-lg space-y-6">
       <h1 className="text-3xl font-bold text-center">🎉 Quiz Completed!</h1>
       <p className="text-xl  text-center">கலந்து கொண்டதற்கு நன்றி கர்த்தர் உங்களை ஆசீர்வதிப்பாராக.</p>
       {/* ✅ Participant Info */}
