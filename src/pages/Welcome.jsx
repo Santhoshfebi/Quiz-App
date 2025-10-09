@@ -124,20 +124,21 @@ export default function Welcome() {
         </h5>
 
         <div className="mt-6 bg-gray-50 p-4 rounded-lg shadow-inner">
+          <h2 className="text-l text-center">Choose your preferred language / விருப்பமான மொழியைத் தேர்ந்தெடுக்கவும்.</h2>
 
           {/* 🌐 Language Dropdown */}
-          {/* 🌐 Language Dropdown */}
-<div className="w-full mb-4">
-  <select
-    value={language}
-    onChange={(e) => setLanguage(e.target.value)}
-    className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400
+
+          <div className="w-full mb-4">
+            <select
+              value={language}
+              onChange={(e) => setLanguage(e.target.value)}
+              className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400
      bg-white text-gray-800 font-medium hover:border-blue-400 transition duration-200 "
-  >
-    <option value="en">English</option>
-    <option value="ta">தமிழ்</option>
-  </select>
-</div>
+            >
+              <option value="en">English</option>
+              <option value="ta">தமிழ்</option>
+            </select>
+          </div>
 
 
           <input
