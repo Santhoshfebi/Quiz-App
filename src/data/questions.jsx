@@ -1,77 +1,132 @@
 export const questions = [
   {
-    question: "பைபிளில் முதலில் வருவோர் யார்?",
-    options: ["நோவா", "ஆதாம்", "யோசேப்", "எலீயா"],
-    answer: "ஆதாம்"
+    question_en: "Who's name comes first in the Bible?",
+    question_ta: "பைபிளில் முதலில் வருவோர் யார்?",
+    options_en: ["Novah", "Adam", "Joseph", "Elijah"],
+    options_ta: ["நோவா", "ஆதாம்", "யோசேப்", "எலீயா"],
+    answer_en: "Adam",
+    answer_ta: "ஆதாம்",
   },
   {
-    question: "தேவன் எத்தனை நாள்களில் உலகத்தை படைத்தார்?",
-    options: ["5", "6", "7", "8"],
-    answer: "6"
+    question_en: "God created the world in how many days?",
+    question_ta: "தேவன் எத்தனை நாள்களில் உலகத்தை படைத்தார்?",
+    options_en: ["5", "6", "7", "8"],
+    options_ta: ["5", "6", "7", "8"],
+    answer_en: "6",
+    answer_ta: "6",
   },
   {
-    question: "மோசே யாரை மீட்க தேவன் உத்தரவிட்டார்?",
-    options: ["நோவா", "இஸ்ரவேல் மக்கள்", "ஆபிரகாம்", "யோசேப்"],
-    answer: "இஸ்ரவேல் மக்கள்"
+    question_en: "God commanded Moses to deliver which people?",
+    question_ta: "மோசே யாரை மீட்க தேவன் உத்தரவிட்டார்?",
+    options_en: ["Novah", "Israelites", "Abraham", "Joseph"],
+    options_ta: ["நோவா", "இஸ்ரவேல் மக்கள்", "ஆபிரகாம்", "யோசேப்"],
+    answer_en: "Israelites",
+    answer_ta: "இஸ்ரவேல் மக்கள்",
   },
   {
-    question: "இயேசு எத்தனை சீடர்களுடன் இருந்தார்?",
-    options: ["10", "12", "14", "7"],
-    answer: "12"
+    question_en: "How many disciples belonged to Jesus Christ?",
+    question_ta: "இயேசுவுக்கு எத்தனை சீடர்கள் இருந்தார்கள்?",
+    options_en: ["10", "12", "14", "7"],
+    options_ta: ["10", "12", "14", "7"],
+    answer_en: "12",
+    answer_ta: "12",
   },
   {
-    question: "இயேசுவின் தந்தை யார்?",
-    options: ["யோசேப்", "சாவேல்", "ஆபிரகாம்", "யோவான்"],
-    answer: "யோசேப்"
+    question_en: "Who is the father of Jesus Christ?",
+    question_ta: "இயேசுவின் தந்தை யார்?",
+    options_en: ["Joseph", "Samuel", "Abraham", "John"],
+    options_ta: ["யோசேப்", "சாமுவேல்", "ஆபிரகாம்", "யோவான்"],
+    answer_en: "Joseph",
+    answer_ta: "யோசேப்",
   },
   {
-    question: "நோவாவின் கப்பலில் எவ்வளவு உயிரினங்கள் இருந்தன?",
-    options: ["ஒவ்வொன்றும் இரண்டு", "ஒவ்வொன்றும் மூன்று", "ஒவ்வொன்றும் நான்கு", "ஒவ்வொன்றும் ஐந்து"],
-    answer: "ஒவ்வொன்றும் இரண்டு"
+    question_en: "How many creatures entered Noah's ark?",
+    question_ta: "நோவாவின் கப்பலில் எவ்வளவு உயிரினங்கள் இருந்தன?",
+    options_en: [
+      "For each one 2",
+      "For each one 3",
+      "For each one 4",
+      "For each one 5",
+    ],
+    options_ta: [
+      "ஒவ்வொன்றும் இரண்டு",
+      "ஒவ்வொன்றும் மூன்று",
+      "ஒவ்வொன்றும் நான்கு",
+      "ஒவ்வொன்றும் ஐந்து",
+    ],
+    answer_en: "For each one 2",
+    answer_ta: "ஒவ்வொன்றும் இரண்டு",
   },
   {
-    question: "இயேசு யாரை நோய்களிலிருந்து குணப்படுத்தினார்?",
-    options: ["இராசா", "மக்கள்", "ஜனன்காரர்கள்", "பாவிகள்"],
-    answer: "மக்கள்"
+    question_en: "Jesus Christ healed whom?",
+    question_ta: "இயேசு யாரை நோய்களிலிருந்து குணப்படுத்தினார்?",
+    options_en: ["Kings", "People", "Priests", "Sinners"],
+    options_ta: ["இராஜாக்கள்", "மக்கள்", "புரோகர்கள்", "பாவிகள்"],
+    answer_en: "People",
+    answer_ta: "மக்கள்",
   },
   {
-    question: "பைபிளில் எத்தனை புத்தகங்கள் உள்ளன?",
-    options: ["50", "66", "39", "72"],
-    answer: "66"
+    question_en: "How many books are there in the Bible?",
+    question_ta: "பைபிளில் எத்தனை புத்தகங்கள் உள்ளன?",
+    options_en: ["50", "66", "39", "72"],
+    options_ta: ["50", "66", "39", "72"],
+    answer_en: "66",
+    answer_ta: "66",
   },
   {
-    question: "இயேசு எங்கு பிறந்தார்?",
-    options: ["ஜெருசலேம்", "பெத்லெஹேம்", "நசரேத்", "ரோம்"],
-    answer: "பெத்லெஹேம்"
+    question_en: "Where was Jesus born?",
+    question_ta: "இயேசு எங்கு பிறந்தார்?",
+    options_en: ["Jerusalem", "Bethlehem", "Nazareth", "Rome"],
+    options_ta: ["எருசலேம்", "பெத்லெஹேம்", "நாசரேத்", "ரோம்"],
+    answer_en: "Bethlehem",
+    answer_ta: "பெத்லெஹேம்",
   },
   {
-    question: "அப்போஸ்தலர் பவுல் யாருக்கு கடிதம் எழுதியார்?",
-    options: ["ரோமர்கள்", "இஸ்ரேலியர்கள்", "யூதர்கள்", "பிளேஸ்தீனர்கள்"],
-    answer: "ரோமர்கள்"
+    question_en: "Paul wrote letters to whom?",
+    question_ta: "அப்போஸ்தலர் பவுல் யாருக்கு கடிதம் எழுதியார்?",
+    options_en: ["Romans", "Israelites", "Jews", "Philippians"],
+    options_ta: ["ரோமர்", "இஸ்ரவேல் மக்கள்", "யூதர்கள்", "பிலிப்பியர்"],
+    answer_en: "Romans",
+    answer_ta: "ரோமர்",
   },
   {
-    question: "ஆபிரகாம் எத்தனை பிள்ளைகள் பெற்றார்?",
-    options: ["1", "2", "3", "4"],
-    answer: "2"
+    question_en: "How many children did Abraham have?",
+    question_ta: "ஆபிரகாம் எத்தனை பிள்ளைகள் பெற்றார்?",
+    options_en: ["1", "2", "3", "4"],
+    options_ta: ["1", "2", "3", "4"],
+    answer_en: "2",
+    answer_ta: "2",
   },
   {
-    question: "மோசே யாரை மீட்க தேவன் அனுப்பினார்?",
-    options: ["நோவா", "ஆபிரகாம்", "இஸ்ரவேல் மக்கள்", "யோசேப்"],
-    answer: "இஸ்ரவேல் மக்கள்"
+    question_en: "Moses was sent by God to deliver whom?",
+    question_ta: "மோசே யாரை மீட்க தேவன் அனுப்பினார்?",
+    options_en: ["Novah", "Abraham", "Israelites", "Joseph"],
+    options_ta: ["நோவா", "ஆபிரகாம்", "இஸ்ரவேல் மக்கள்", "யோசேப்"],
+    answer_en: "Israelites",
+    answer_ta: "இஸ்ரவேல் மக்கள்",
   },
   {
-    question: "நோவாவின் கப்பல் எங்கு விட்டு நிறுத்தப்பட்டது?",
-    options: ["மலை", "கடல்", "வனம்", "நதி"],
-    answer: "மலை"
+    question_en: "Where did Noah's ark stay?",
+    question_ta: "நோவாவின் கப்பல் எங்கு நிறுத்தப்பட்டது?",
+    options_en: ["Mountain", "Sea", "Forest", "River"],
+    options_ta: ["மலை", "கடல்", "வனம்", "நதி"],
+    answer_en: "Mountain",
+    answer_ta: "மலை",
   },
   {
-    question: "யோசேப் எவ்வளவு வயதில் ராஜாவாக ஆனார்?",
-    options: ["17", "30", "25", "20"],
-    answer: "30"
+    question_en: "What was the age of Joseph when he became king?",
+    question_ta: "யோசேப் எத்தனை வயதில் ராஜாவாக ஆனார்?",
+    options_en: ["17", "30", "25", "20"],
+    options_ta: ["17", "30", "25", "20"],
+    answer_en: "30",
+    answer_ta: "30",
   },
   {
-    question: "இயேசு எங்கு வளர்ந்தார்?",
-    options: ["பெத்லெஹேம்", "நசரேத்", "யூதியா", "எகிப்து"],
-    answer: "நசரேத்"
-  }
+    question_en: "Where did Jesus Christ grow up?",
+    question_ta: "இயேசு எங்கு வளர்ந்தார்?",
+    options_en: ["Bethlehem", "Nazareth", "Judea", "Egypt"],
+    options_ta: ["பெத்லெஹேம்", "நாசரேத்", "யூதியா", "எகிப்து"],
+    answer_en: "Nazareth",
+    answer_ta: "நாசரேத்",
+  },
 ];
