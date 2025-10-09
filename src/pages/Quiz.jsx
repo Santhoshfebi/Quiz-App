@@ -330,7 +330,7 @@ export default function Quiz() {
     if (showAnswer) return;
     if (timeLeft <= 0) {
       setShowAnswer(true);
-      setTimeout(() => handleNext(true), 1500);
+      setTimeout(() => handleNext(true), 800);
       return;
     }
 
@@ -380,7 +380,7 @@ export default function Quiz() {
   const handleSelect = (option) => {
     setSelected(option);
     setShowAnswer(true);
-    setTimeout(() => handleNext(false, option), 1500);
+    setTimeout(() => handleNext(false, option), 800);
   };
 
   const timePercent = (timeLeft / 20) * 100;

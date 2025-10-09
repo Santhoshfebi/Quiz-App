@@ -85,19 +85,15 @@
 // }
 
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Welcome() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [place, setPlace] = useState("");
+  const [language, setLanguage] = useState("en"); // default English
   const navigate = useNavigate();
-  const [language, setLanguage] = useState("en"); // 🌐 default English
-
-  const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "ta" : "en"));
-  };
 
   const handleStart = () => {
     const phoneRegex = /^[0-9]{10}$/;
@@ -114,59 +110,64 @@ export default function Welcome() {
 
   return (
     <div className="flex flex-col md:flex-row items-start justify-center min-h-screen bg-gray-50 p-4">
-      
+
       {/* Left: Input Form */}
       <div className="mt-20 w-96 bg-white p-6 rounded-2xl shadow-lg space-y-4">
-        {/* 🌐 Language Toggle */}
-        
-
         <h1 className="text-2xl font-bold text-center">
-          {language === "en" ? "Welcome to the Quiz...!" : "வினாடி வினாவிற்கு வருக...!"}
+          {language === "en" ? "Welcome to the Quiz!" : "வினாடி வினாவிற்கு வருக."}
         </h1>
         <p className="text-center">
-          {language === "en" ? "Enjoy the Quiz Lets get Started...!" : "வினாடி வினாவை அனுபவிக்கவும்...!"}
+          {language === "en" ? "Enjoy the Quiz Lets get Started ...!" : "வினாடி வினாவை அனுபவிக்கவும்...!"}
         </p>
         <h5 className="text-xl font-bold text-center">
           {language === "en" ? "Chapter: Mock Round" : "அத்தியாயம்: மொக் சுற்று"}
         </h5>
 
-        <input
-          type="text"
-          placeholder={language === "en" ? "Your Name" : "உங்கள் பெயர்"}
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="w-full border px-3 py-2 rounded-lg"
-        />
+        <div className="mt-6 bg-gray-50 p-4 rounded-lg shadow-inner">
 
-        <input
-          type="tel"
-          placeholder={language === "en" ? "Phone Number" : "தொலைபேசி எண்"}
-          value={phone}
-          onChange={(e) => {
-            const val = e.target.value.replace(/[^0-9]/g, "");
-            setPhone(val);
-          }}
-          maxLength={10}
-          className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
+          {/* 🌐 Language Dropdown */}
+          {/* 🌐 Language Dropdown */}
+<div className="w-full mb-4">
+  <select
+    value={language}
+    onChange={(e) => setLanguage(e.target.value)}
+    className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400
+     bg-white text-gray-800 font-medium hover:border-blue-400 transition duration-200 "
+  >
+    <option value="en">English</option>
+    <option value="ta">தமிழ்</option>
+  </select>
+</div>
 
-        <input
-          type="text"
-          placeholder={language === "en" ? "Division / Place" : "இடம்"}
-          value={place}
-          onChange={(e) => setPlace(e.target.value)}
-          className="w-full border px-3 py-2 rounded-lg"
-        />
 
-        <div className="flex justify-center">
-          <button
-            onClick={toggleLanguage}
-            className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-gray-400 transition"
-          >
-            {language === "en" ? "தமிழில் காண்க" : "View in English"}
-          </button>
+          <input
+            type="text"
+            placeholder={language === "en" ? "Your Name" : "உங்கள் பெயர்"}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+
+          <input
+            type="tel"
+            placeholder={language === "en" ? "Phone Number" : "தொலைபேசி எண்"}
+            value={phone}
+            onChange={(e) => {
+              const val = e.target.value.replace(/[^0-9]/g, "");
+              setPhone(val);
+            }}
+            maxLength={10}
+            className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+
+          <input
+            type="text"
+            placeholder={language === "en" ? "Division / Place" : "வகுப்பு / இடம்"}
+            value={place}
+            onChange={(e) => setPlace(e.target.value)}
+            className="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
         </div>
-
         <button
           onClick={handleStart}
           className="w-full bg-blue-400 text-white py-2 rounded-lg hover:bg-green-600"
@@ -191,3 +192,4 @@ export default function Welcome() {
     </div>
   );
 }
+
